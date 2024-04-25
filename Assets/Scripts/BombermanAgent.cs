@@ -74,7 +74,7 @@ public class BombermanAgent : Agent
         if (Vector2.Distance(agentTransform.position, target.position) < closeDistance)
         {
             // Достигли цели, награда
-            SetReward(1f);
+            SetReward(1.0f);
             EndEpisode();
         }
 
@@ -83,11 +83,9 @@ public class BombermanAgent : Agent
         if (elapsedTime >= episodeTimeLimit)
         {
             // Время вышло, штраф и перезапуск
-            SetReward(-1f);
             EndEpisode();
         }
     }
-
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {

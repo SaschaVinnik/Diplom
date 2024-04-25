@@ -2,22 +2,22 @@
     "BombermanAgent": {
         "checkpoints": [
             {
-                "steps": 865,
-                "file_path": "results\\BombermanAgent\\BombermanAgent\\BombermanAgent-865.onnx",
-                "reward": -1.0,
-                "creation_time": 1714058214.8142238,
+                "steps": 18837,
+                "file_path": "results\\BombermanAgent\\BombermanAgent\\BombermanAgent-18837.onnx",
+                "reward": 1.0,
+                "creation_time": 1714072843.2971663,
                 "auxillary_file_paths": [
-                    "results\\BombermanAgent\\BombermanAgent\\BombermanAgent-865.pt"
+                    "results\\BombermanAgent\\BombermanAgent\\BombermanAgent-18837.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 865,
+            "steps": 18837,
             "file_path": "results\\BombermanAgent\\BombermanAgent.onnx",
-            "reward": -1.0,
-            "creation_time": 1714058214.8142238,
+            "reward": 1.0,
+            "creation_time": 1714072843.2971663,
             "auxillary_file_paths": [
-                "results\\BombermanAgent\\BombermanAgent\\BombermanAgent-865.pt"
+                "results\\BombermanAgent\\BombermanAgent\\BombermanAgent-18837.pt"
             ]
         }
     },
