@@ -3,7 +3,7 @@ using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 
-public class BombermanAgent : Agent
+public class BombermanAgentEmpty : Agent
 {
     // Ссылка на компонент Transform для перемещения агента
     private Transform agentTransform;
@@ -74,7 +74,7 @@ public class BombermanAgent : Agent
         if (Vector2.Distance(agentTransform.position, target.position) < closeDistance)
         {
             // Достигли цели, награда
-            SetReward(1.0f);
+            SetReward(1f);
             EndEpisode();
         }
 
@@ -83,9 +83,11 @@ public class BombermanAgent : Agent
         if (elapsedTime >= episodeTimeLimit)
         {
             // Время вышло, штраф и перезапуск
+            SetReward(-1f);
             EndEpisode();
         }
     }
+
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {

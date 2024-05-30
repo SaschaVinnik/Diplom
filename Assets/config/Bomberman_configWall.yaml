@@ -1,0 +1,16 @@
+default_settings: null
+behaviors:
+  BombermanAgent:
+    trainer_type: ppo
+    hyperparameters:
+      batch_size: 128
+      buffer_size: 2048
+      learning_rate: 0.0003
+      beta: 5.0e-3      
+      epsilon: 0.2
+      lambd:  0.95
+      num_epoch: 3       
+    max_steps: 5000000
+    time_horizon: 100
+    summary_freq: 5000
+    
