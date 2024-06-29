@@ -1,0 +1,29 @@
+{
+    "BombermanAgentFullV2SAC": {
+        "checkpoints": [
+            {
+                "steps": 131715,
+                "file_path": "results\\BombermanAgentFullV2SAC\\BombermanAgentFullV2SAC\\BombermanAgentFullV2SAC-131715.onnx",
+                "reward": null,
+                "creation_time": 1718052381.6324756,
+                "auxillary_file_paths": [
+                    "results\\BombermanAgentFullV2SAC\\BombermanAgentFullV2SAC\\BombermanAgentFullV2SAC-131715.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 131715,
+            "file_path": "results\\BombermanAgentFullV2SAC\\BombermanAgentFullV2SAC.onnx",
+            "reward": null,
+            "creation_time": 1718052381.6324756,
+            "auxillary_file_paths": [
+                "results\\BombermanAgentFullV2SAC\\BombermanAgentFullV2SAC\\BombermanAgentFullV2SAC-131715.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

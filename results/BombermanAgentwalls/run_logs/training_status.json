@@ -2,58 +2,58 @@
     "BombermanAgent": {
         "checkpoints": [
             {
-                "steps": 500008,
-                "file_path": "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-500008.onnx",
-                "reward": 0.800000011920929,
-                "creation_time": 1716726686.219615,
+                "steps": 3822711,
+                "file_path": "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-3822711.onnx",
+                "reward": 0.92,
+                "creation_time": 1717796212.8667817,
                 "auxillary_file_paths": [
-                    "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-500008.pt"
+                    "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-3822711.pt"
                 ]
             },
             {
-                "steps": 999986,
-                "file_path": "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-999986.onnx",
-                "reward": 0.9284090907736258,
-                "creation_time": 1716731870.3405237,
+                "steps": 3946686,
+                "file_path": "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-3946686.onnx",
+                "reward": 0.9151515151515152,
+                "creation_time": 1717833156.0525854,
                 "auxillary_file_paths": [
-                    "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-999986.pt"
+                    "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-3946686.pt"
                 ]
             },
             {
-                "steps": 1000001,
-                "file_path": "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-1000001.onnx",
-                "reward": 0.9292134830121244,
-                "creation_time": 1716731870.3815272,
+                "steps": 3999992,
+                "file_path": "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-3999992.onnx",
+                "reward": 0.8832116788321168,
+                "creation_time": 1717833703.7312539,
                 "auxillary_file_paths": [
-                    "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-1000001.pt"
+                    "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-3999992.pt"
                 ]
             },
             {
-                "steps": 1499996,
-                "file_path": "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-1499996.onnx",
-                "reward": 1.0,
-                "creation_time": 1716737641.2814157,
+                "steps": 4499933,
+                "file_path": "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-4499933.onnx",
+                "reward": 0.953125,
+                "creation_time": 1717837778.2756789,
                 "auxillary_file_paths": [
-                    "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-1499996.pt"
+                    "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-4499933.pt"
                 ]
             },
             {
-                "steps": 1600229,
-                "file_path": "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-1600229.onnx",
-                "reward": 0.9948497849472603,
-                "creation_time": 1716738639.0891762,
+                "steps": 4974691,
+                "file_path": "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-4974691.onnx",
+                "reward": 0.9305555555555556,
+                "creation_time": 1717841681.7528412,
                 "auxillary_file_paths": [
-                    "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-1600229.pt"
+                    "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-4974691.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 1600229,
+            "steps": 4974691,
             "file_path": "results\\BombermanAgentwalls\\BombermanAgent.onnx",
-            "reward": 0.9948497849472603,
-            "creation_time": 1716738639.0891762,
+            "reward": 0.9305555555555556,
+            "creation_time": 1717841681.7528412,
             "auxillary_file_paths": [
-                "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-1600229.pt"
+                "results\\BombermanAgentwalls\\BombermanAgent\\BombermanAgent-4974691.pt"
             ]
         }
     },

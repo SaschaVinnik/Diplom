@@ -1,65 +1,29 @@
 {
-    "BombermanAgentFull": {
-        "checkpoints": [
-            {
-                "steps": 1999973,
-                "file_path": "results\\BombermanAgentFull\\BombermanAgentFull\\BombermanAgentFull-1999973.onnx",
-                "reward": null,
-                "creation_time": 1716826698.8337555,
-                "auxillary_file_paths": [
-                    "results\\BombermanAgentFull\\BombermanAgentFull\\BombermanAgentFull-1999973.pt"
-                ]
-            },
-            {
-                "steps": 2499971,
-                "file_path": "results\\BombermanAgentFull\\BombermanAgentFull\\BombermanAgentFull-2499971.onnx",
-                "reward": null,
-                "creation_time": 1716831791.4232183,
-                "auxillary_file_paths": [
-                    "results\\BombermanAgentFull\\BombermanAgentFull\\BombermanAgentFull-2499971.pt"
-                ]
-            },
-            {
-                "steps": 2746040,
-                "file_path": "results\\BombermanAgentFull\\BombermanAgentFull\\BombermanAgentFull-2746040.onnx",
-                "reward": -1.0,
-                "creation_time": 1716834229.341987,
-                "auxillary_file_paths": [
-                    "results\\BombermanAgentFull\\BombermanAgentFull\\BombermanAgentFull-2746040.pt"
-                ]
-            },
-            {
-                "steps": 2861895,
-                "file_path": "results\\BombermanAgentFull\\BombermanAgentFull\\BombermanAgentFull-2861895.onnx",
-                "reward": null,
-                "creation_time": 1716886240.741011,
-                "auxillary_file_paths": [
-                    "results\\BombermanAgentFull\\BombermanAgentFull\\BombermanAgentFull-2861895.pt"
-                ]
-            },
-            {
-                "steps": 2867712,
-                "file_path": "results\\BombermanAgentFull\\BombermanAgentFull\\BombermanAgentFull-2867712.onnx",
-                "reward": -0.3333333333333333,
-                "creation_time": 1716918270.0686207,
-                "auxillary_file_paths": [
-                    "results\\BombermanAgentFull\\BombermanAgentFull\\BombermanAgentFull-2867712.pt"
-                ]
-            }
-        ],
-        "final_checkpoint": {
-            "steps": 2867712,
-            "file_path": "results\\BombermanAgentFull\\BombermanAgentFull.onnx",
-            "reward": -0.3333333333333333,
-            "creation_time": 1716918270.0686207,
-            "auxillary_file_paths": [
-                "results\\BombermanAgentFull\\BombermanAgentFull\\BombermanAgentFull-2867712.pt"
-            ]
-        }
-    },
     "metadata": {
         "stats_format_version": "0.3.0",
         "mlagents_version": "0.27.0",
         "torch_version": "1.7.1+cu110"
+    },
+    "BombermanAgentFull": {
+        "checkpoints": [
+            {
+                "steps": 2869213,
+                "file_path": "results\\BombermanAgentFull\\BombermanAgentFull\\BombermanAgentFull-2869213.onnx",
+                "reward": -1.0,
+                "creation_time": 1717247736.0812707,
+                "auxillary_file_paths": [
+                    "results\\BombermanAgentFull\\BombermanAgentFull\\BombermanAgentFull-2869213.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2869213,
+            "file_path": "results\\BombermanAgentFull\\BombermanAgentFull.onnx",
+            "reward": -1.0,
+            "creation_time": 1717247736.0812707,
+            "auxillary_file_paths": [
+                "results\\BombermanAgentFull\\BombermanAgentFull\\BombermanAgentFull-2869213.pt"
+            ]
+        }
     }
 }

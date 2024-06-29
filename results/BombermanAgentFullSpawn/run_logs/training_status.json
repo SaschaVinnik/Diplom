@@ -1,0 +1,65 @@
+{
+    "BombermanAgentFull": {
+        "checkpoints": [
+            {
+                "steps": 999967,
+                "file_path": "results\\BombermanAgentFullSpawn\\BombermanAgentFull\\BombermanAgentFull-999967.onnx",
+                "reward": -0.5099999770522118,
+                "creation_time": 1717343533.9249227,
+                "auxillary_file_paths": [
+                    "results\\BombermanAgentFullSpawn\\BombermanAgentFull\\BombermanAgentFull-999967.pt"
+                ]
+            },
+            {
+                "steps": 1499980,
+                "file_path": "results\\BombermanAgentFullSpawn\\BombermanAgentFull\\BombermanAgentFull-1499980.onnx",
+                "reward": -0.27187500102445483,
+                "creation_time": 1717348840.8536077,
+                "auxillary_file_paths": [
+                    "results\\BombermanAgentFullSpawn\\BombermanAgentFull\\BombermanAgentFull-1499980.pt"
+                ]
+            },
+            {
+                "steps": 1681375,
+                "file_path": "results\\BombermanAgentFullSpawn\\BombermanAgentFull\\BombermanAgentFull-1681375.onnx",
+                "reward": -0.4944444388427116,
+                "creation_time": 1717350759.102374,
+                "auxillary_file_paths": [
+                    "results\\BombermanAgentFullSpawn\\BombermanAgentFull\\BombermanAgentFull-1681375.pt"
+                ]
+            },
+            {
+                "steps": 1999999,
+                "file_path": "results\\BombermanAgentFullSpawn\\BombermanAgentFull\\BombermanAgentFull-1999999.onnx",
+                "reward": -0.3124999937911828,
+                "creation_time": 1717354216.123014,
+                "auxillary_file_paths": [
+                    "results\\BombermanAgentFullSpawn\\BombermanAgentFull\\BombermanAgentFull-1999999.pt"
+                ]
+            },
+            {
+                "steps": 2198480,
+                "file_path": "results\\BombermanAgentFullSpawn\\BombermanAgentFull\\BombermanAgentFull-2198480.onnx",
+                "reward": null,
+                "creation_time": 1717356361.1135871,
+                "auxillary_file_paths": [
+                    "results\\BombermanAgentFullSpawn\\BombermanAgentFull\\BombermanAgentFull-2198480.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2198480,
+            "file_path": "results\\BombermanAgentFullSpawn\\BombermanAgentFull.onnx",
+            "reward": null,
+            "creation_time": 1717356361.1135871,
+            "auxillary_file_paths": [
+                "results\\BombermanAgentFullSpawn\\BombermanAgentFull\\BombermanAgentFull-2198480.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

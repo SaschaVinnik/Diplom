@@ -28,6 +28,27 @@ public class BombermanAgentFull : Agent
     // Список для хранения начальных состояний разрушаемых объектов
     private List<DestructibleTile> destructibleTilesInitial = new List<DestructibleTile>();
 
+    private Vector3[] roomCenters = new Vector3[]
+    {
+        new Vector3(-5f, 2.5f, 0f), // Комната 1
+        new Vector3(2f, 2.5f, 0f),  // Комната 2
+        new Vector3(4f, -3.5f, 0f),   // Комната 3
+        new Vector3(0.5f,-3.5f, 0f),   // Комната 4
+        new Vector3(-3f, -3.5f, 0f),  // Комната 5
+        new Vector3(-6.5f, -3.5f, 0f)   // Комната 6
+    };
+
+    // Размеры комнат (ширина, высота)
+    private Vector2[] roomSizes = new Vector2[]
+    {
+        new Vector2(5f, 6f),  // Комната 1
+        new Vector2(5f, 6f),  // Комната 2
+        new Vector2(2f, 5f),  // Комната 3
+        new Vector2(3f, 5f),  // Комната 4
+        new Vector2(2f, 5f),  // Комната 5
+        new Vector2(3f, 5f)   // Комната 6
+    };
+
     void Start()
     {
         Application.runInBackground = true;
@@ -42,8 +63,10 @@ public class BombermanAgentFull : Agent
     public override void OnEpisodeBegin()
     {
         elapsedTime = 0f;
-        agentTransform.position = GetRandomFreePosition();
-        target.position = GetRandomFreePosition();
+        Vector3 agentPosition, targetPosition;
+        GetSpawnPositions(out agentPosition, out targetPosition);
+        agentTransform.position = agentPosition;
+        target.position = targetPosition;
         rb.velocity = Vector2.zero;
         bombPlaced = false;
 
@@ -71,6 +94,7 @@ public class BombermanAgentFull : Agent
         if (placeBomb && !bombPlaced && !IsCollidingWithDestructible())
         {
             PlaceBomb(agentTransform.position);
+            SetReward(0.1f);
         }
 
         if (IsCollidingWithWall())
@@ -81,10 +105,6 @@ public class BombermanAgentFull : Agent
         if (IsCollidingWithDestructible())
         {
             SetReward(-0.05f);
-            if (placeBomb && !bombPlaced && !IsCollidingWithDestructible())
-        {
-            PlaceBomb(agentTransform.position);
-        }
         }
 
         if (Vector2.Distance(agentTransform.position, target.position) < closeDistance)
@@ -111,15 +131,30 @@ public class BombermanAgentFull : Agent
         discreteActions[0] = Input.GetKey(KeyCode.Space) ? 1 : 0;
     }
 
-    private Vector3 GetRandomFreePosition()
+    private void GetSpawnPositions(out Vector3 agentPosition, out Vector3 targetPosition)
     {
+        int agentRoomIndex, targetRoomIndex;
+        do
+        {
+            agentRoomIndex = Random.Range(0, roomCenters.Length);
+            targetRoomIndex = Random.Range(0, roomCenters.Length);
+        } while (agentRoomIndex == targetRoomIndex);
+
+        agentPosition = GetRandomFreePositionInRoom(agentRoomIndex);
+        targetPosition = GetRandomFreePositionInRoom(targetRoomIndex);
+    }
+
+    private Vector3 GetRandomFreePositionInRoom(int roomIndex)
+    {
+        Vector3 roomCenter = roomCenters[roomIndex];
+        Vector2 roomSize = roomSizes[roomIndex];
         Vector3 randomPosition;
 
         do
         {
             randomPosition = new Vector3(
-                Random.Range(-7.5f, 5f),
-                Random.Range(-5f, 5f),
+                roomCenter.x + Random.Range(-roomSize.x / 2, roomSize.x / 2),
+                roomCenter.y + Random.Range(-roomSize.y / 2, roomSize.y / 2),
                 0f);
         } while (!IsValidPosition(randomPosition));
 
